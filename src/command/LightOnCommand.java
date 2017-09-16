@@ -6,7 +6,7 @@ import device.Light;
  * Created by k.dodonov on 14.09.2017.
  */
 public class LightOnCommand implements Command {
-    Light light;
+    private Light light;
 
     public LightOnCommand(Light light){
         this.light = light;
@@ -16,5 +16,5 @@ public class LightOnCommand implements Command {
     @Override
     public void execute() {
         light.on();
-    }
+           }
 }
