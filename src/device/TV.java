@@ -1,11 +1,25 @@
 package device;
 
 /**
- * Created by k.dodonov on 14.09.2017.
+ * not used
  */
 public class TV {
-    void on(){}
-    void off(){}
-    void setInputChannel(){}
-    void setVolume(){}
+    private String name;
+
+    public TV(String name) {
+        this.name = name;
+    }
+
+    public TV() { }
+
+    public void on(){
+        System.out.println(name + " TV is On");}
+    public void off(){
+        System.out.println(name + " TV is On");}
+    public void setInputChannel(int channel){
+        System.out.println(name + " TV channel is: " + channel);
+    }
+    public void setVolume(int volume){
+        System.out.println(name + " TV volume is: "+volume);
+    }
 }

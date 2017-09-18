@@ -1,8 +1,9 @@
 package device;
 
-/**
- * Created by k.dodonov on 14.09.2017.
+/**not used
+ *
  */
+
 public class Hottub {
     void circulate(){}
     void jetsOn(){}

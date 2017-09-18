@@ -1,13 +1,22 @@
 package device;
 
-/**
- * Created by k.dodonov on 14.09.2017.
- */
+
 public class Light {
+    private String name;
+    public Light(){}
+    public Light(String name) {
+        this.name = name;
+    }
+
     public void on(){
-        System.out.println("Light is On");
+        System.out.println(name + " Light is On");
     }
     public void off(){
-        System.out.println("Light is Off");
+        System.out.println(name + " Light is Off");
+    }
+
+    @Override
+    public String toString() {
+        return " " + name + " ";
     }
 }

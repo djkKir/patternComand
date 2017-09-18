@@ -1,8 +1,5 @@
 package command;
 
-/**
- * Created by k.dodonov on 15.09.2017.
- */
 public class RemoteControl {
     private Command[] onCommands;
     private Command[] offCommands;
@@ -34,8 +31,8 @@ public class RemoteControl {
         StringBuffer stringBuffer = new StringBuffer();
         stringBuffer.append("\n------ Remote Control ------\n");
         for (int i=0; i< onCommands.length; i++){
-            stringBuffer.append("[slot " +i + "] " + onCommands[i].getClass().getName()
-            + "  " + offCommands[i].getClass().getName() + "\n" );
+            stringBuffer.append("[slot " +i + "] " + onCommands[i].getClass().getSimpleName()
+            + "  " + offCommands[i].getClass().getSimpleName() + "\n" );
         }
         return stringBuffer.toString();
     }

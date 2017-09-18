@@ -2,15 +2,15 @@ package command;
 
 import device.GarageDoor;
 
-public class GarageDoorOpenCommand implements Command {
+public class GarageDoorDownCommand implements Command{
     private GarageDoor garageDoor;
 
-    public GarageDoorOpenCommand(GarageDoor garageDoor) {
+    public GarageDoorDownCommand(GarageDoor garageDoor) {
         this.garageDoor = garageDoor;
     }
 
     @Override
     public void execute() {
-        garageDoor.up();
+        garageDoor.down();
     }
 }

@@ -4,9 +4,7 @@ import command.SimpleRemoteControl;
 import device.GarageDoor;
 import device.Light;
 
-/**
- * Created by k.dodonov on 15.09.2017.
- */
+
 public class RemoteControlTest {
     public static void main(String[] args) {
         SimpleRemoteControl remote = new SimpleRemoteControl();

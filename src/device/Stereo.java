@@ -1,25 +1,36 @@
 package device;
 
-/**
- * Created by k.dodonov on 14.09.2017.
- */
+
 public class Stereo {
+    private String name;
+    public Stereo(String s) {
+        name = s;
+    }
+
+    public Stereo() {
+    }
+
     public void on(){
-        System.out.println("Stereo On");
+        System.out.println(name + " Stereo On");
     }
     public void off(){
-        System.out.println("Stereo Off");
+        System.out.println(name + " Stereo Off");
     }
     public void setCD(){
-        System.out.println("Stereo  Set CD");
+        System.out.println(name + " Stereo  Set CD");
     }
     public void setDvd(){
-        System.out.println("Stereo Set DVD");
+        System.out.println(name + " Stereo Set DVD");
     }
     public void setRadio(){
-        System.out.println("Stereo set Radio");
+        System.out.println(name + " Stereo set Radio");
     }
     public void setVolume(int volume){
-        System.out.println("Stereo volume is " + volume);
+        System.out.println(name + " Stereo volume is " + volume);
+    }
+
+    @Override
+    public String toString() {
+        return "Stereo name= " + name + " ";
     }
 }

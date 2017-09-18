@@ -2,9 +2,6 @@ package command;
 
 import device.Light;
 
-/**
- * Created by k.dodonov on 14.09.2017.
- */
 public class LightOnCommand implements Command {
     private Light light;
 

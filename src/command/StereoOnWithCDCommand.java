@@ -2,9 +2,7 @@ package command;
 
 import device.Stereo;
 
-/**
- * Created by k.dodonov on 15.09.2017.
- */
+
 public class StereoOnWithCDCommand implements Command {
     private Stereo stereo;
 

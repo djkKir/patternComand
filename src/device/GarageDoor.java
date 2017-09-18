@@ -1,30 +1,37 @@
 package device;
 
-import command.Command;
 
-/**
- * Created by k.dodonov on 15.09.2017.
- */
 public class GarageDoor {
+    private String name;
+    public GarageDoor(String s) {
+        name = s;
+    }
+
+    public GarageDoor() {
+    }
+
     public void up(){
-        System.out.println("GarageDoor is Open");
+        System.out.println(name + " GarageDoor is Open");
     }
 
     public void down(){
-        System.out.println("GarageDoor is Close");
+        System.out.println(name + " GarageDoor is Close");
     }
 
     public void stop(){
-        System.out.println("GarageDoor is Stop");
+        System.out.println(name + " GarageDoor is Stop");
     }
 
     public void lightOn(){
-        System.out.println("GarageDoor is light On");
+        System.out.println(name + " GarageDoor is light On");
     }
 
     public void lightOff(){
-        System.out.println("GarageDoor is lightOff");
+        System.out.println(name + " GarageDoor is lightOff");
     }
 
-
+    @Override
+    public String toString() {
+        return "GarageDoor name='" + name + " " ;
+    }
 }
