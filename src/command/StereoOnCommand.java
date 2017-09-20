@@ -2,25 +2,23 @@ package command;
 
 import device.Stereo;
 
+public class StereoOnCommand implements Command {
 
-public class StereoOffCommand implements Command
-{
     private Stereo stereo;
 
-    public StereoOffCommand(Stereo stereo) {
+    public StereoOnCommand(Stereo stereo) {
         this.stereo = stereo;
     }
 
     @Override
     public void execute() {
-        stereo.off();
+        stereo.on();
 
     }
 
     @Override
     public void undo() {
-        stereo.on();
-      //stereo.setCD();
-      //stereo.setVolume(11);
+        stereo.off();
+
     }
 }

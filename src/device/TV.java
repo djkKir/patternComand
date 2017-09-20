@@ -15,7 +15,8 @@ public class TV {
     public void on(){
         System.out.println(name + " TV is On");}
     public void off(){
-        System.out.println(name + " TV is On");}
+        System.out.println(name + " TV is Off");}
+
     public void setInputChannel(int channel){
         System.out.println(name + " TV channel is: " + channel);
     }
